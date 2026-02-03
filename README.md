@@ -14,32 +14,32 @@ A secure microservices-based application built with Spring Boot and Spring Cloud
 
 ## 🛠️ Tech Stack
 
-- **Backend:** Java 17, Spring Boot 3.x, Spring Cloud
+- **Backend:** Java 21, Spring Boot 3.x, Spring Cloud
 - **Security:** Spring Security, JWT
-- **Database:** PostgreSQL
+- **Database:** MySQL
 - **Service Discovery:** Netflix Eureka
 - **API Gateway:** Spring Cloud Gateway
-- **Communication:** OpenFeign, RestTemplate
+- **Communication:** RestTemplate
 - **Build Tool:** Maven
-- **IDE:** IntelliJ IDEA
+- **IDE:** Eclipse IDE
 
 ## 📦 Microservices
 
 | Service | Port | Description |
 |---------|------|-------------|
 | **Eureka Server** | 8761 | Service discovery and registration |
-| **API Gateway** | 8080 | Routes requests and handles authentication |
-| **School Service** | 8082 | Manages school information |
-| **Student Service** | 8081 | Manages student data and operations |
+| **API Gateway** | 8083 | Routes requests and handles authentication |
+| **School Service** | 8081 | Manages school information |
+| **Student Service** | 8082 | Manages student data and operations |
 
 ## 🏗️ Architecture
 ```
 Client
   ↓
-API Gateway (8080) ← JWT Authentication
+API Gateway (8083) ← JWT Authentication
   ↓
-├─→ Student Service (8081) ←→ PostgreSQL
-├─→ School Service (8082) ←→ PostgreSQL
+├─→ Student Service (8082) ←→ SQLYOG
+├─→ School Service (8081) ←→ SQLYOG
   ↓
 Eureka Server (8761) - Service Registry
 ```
@@ -48,9 +48,9 @@ Eureka Server (8761) - Service Registry
 
 Before running this project, ensure you have:
 
-- **Java 17** or higher
-- **Maven 3.6+**
-- **PostgreSQL 12+**
+- **Java 21** or higher
+- **Maven 3.5+**
+- **SQLYOG**
 - **Postman** (for testing APIs)
 
 ## 🚀 Getting Started
