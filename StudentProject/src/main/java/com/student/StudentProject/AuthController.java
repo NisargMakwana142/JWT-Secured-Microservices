@@ -19,6 +19,3 @@ public class AuthController {
 	    }
 }
 
-
-//token
-//eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdHVkZW50IiwiaWF0IjoxNzcwMDkxMTE2LCJleHAiOjE3NzAwOTQ3MTZ9.bkrlQC15QWM753F9SmFx8w5a56Du-loqn0BgdMYJDzU
